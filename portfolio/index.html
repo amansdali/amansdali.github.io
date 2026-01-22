@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-CA" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My portfolio website.">
+        <title>Portfolio | Amanda Li</title>
+        <link rel="icon" href="images/duck.png" type="image/png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Gamja+Flower&family=JetBrains+Mono:wght@400;800&display=swap"
+              rel="stylesheet">
+
+        <link rel="stylesheet" href="scalable-styles.css">
+    </head>
+
+    <body>
+    <!-- NAVBAR -->
+    <div id="navigation-divider">
+        <nav class="navbar row-flex">
+            <div class="nav-left">
+                <a href="https://amansdali.github.io/" aria-label="Navigate to home page (main website)">
+                    <div class="homepage-link">
+                        <svg class="quack" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="m 44.999997,87.939712 c 24.651136,0 44.634857,-19.248315 44.634857,-42.992283 0,-23.743968 -19.983721,-42.9922836 -44.634857,-42.9922836 -24.651133,0 -44.63485083,19.2483156 -44.63485083,42.9922836 0,23.743968 19.98371783,42.992283 44.63485083,42.992283 z"
+                                    class="icon-secondary"
+                                    id="duckpath1"
+                            />
+                            <path
+                                    id="duckpath2"
+                                    d="m 75.068125,44.125749 c -1.743365,0.08077 -3.463871,1.423103 -10.083755,2.879054 -4.706188,1.035018 -7.45458,1.214348 -18.342678,0.598902 -7.259473,-0.410394 -13.756947,0.300019 -19.488667,2.097358 -4.42627,1.387874 -7.528396,7.661407 -8.884842,12.28109 -1.435511,6.661073 -1.302552,10.505184 -0.729473,12.901636 0.01297,0.05427 0.0406,0.109096 0.08514,0.163556 2.132382,6.897775 13.82249,13.2019 29.017833,12.99544 14.517503,-0.19725 25.645475,-8.440114 29.693897,-15.25895 2.168522,-4.053667 3.300573,-8.217205 3.687668,-11.426865 0.510515,-4.232427 1.801475,-13.837964 -3.003731,-16.747771 -0.737378,-0.459646 -1.370275,-0.510373 -1.951401,-0.48345 z"
+                                    class="icon-primary"
+                            />
+                            <ellipse
+                                    cx="38.65826"
+                                    cy="37.718636"
+                                    class="icon-primary"
+                                    id="duckcircle3"
+                                    rx="19.207424"
+                                    ry="19.770243"
+                            />
+                            <path
+                                    d="m 19.74193,37.718635 c -2.32811,1.497721 -9.719944,2.695948 -9.021594,6.290504 0.581938,2.995566 7.275541,5.0924 12.80491,5.0924 z"
+                                    class="icon-primary"
+                                    id="duckpath4"
+                            />
+                            <path
+                                    d="m 35.372346,37.374459 c 0,2.249301 -0.837964,4.072801 -2.890295,4.072801 -2.052331,0 -2.890294,-1.8235 -2.890294,-4.072801 0,-2.249301 0.837963,-4.072801 2.890294,-4.072801 2.052331,0 2.890295,1.8235 2.890295,4.072801 z"
+                                    class="icon-secondary"
+                                    id="duckpath5"/>
+                        </svg>
+                        <h4 class="header-link">
+                            <span class="navbar-username">amansdali</span>
+                        </h4>
+                    </div>
+                </a>
+                <h4 class="header-4">
+                    /portfolio/
+                </h4>
+            </div>
+            <div class="nav-right">
+                <a href="https://amansdali.github.io/portfolio/">
+                    <p class="body">
+                        home
+                    </p>
+                </a>
+                <a href="#about-section">
+                    <p class="body">
+                        about
+                    </p>
+                </a>
+                <a href="#skills-section">
+                    <p class="body">
+                        skills
+                    </p>
+                </a>
+                <a href="#projects-section">
+                    <p class="body">
+                        projects
+                    </p>
+                </a>
+                <a href="#contact-section">
+                    <p class="body">
+                        contact
+                    </p>
+                </a>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg id="sun" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="13.3103" cy="13.0291" rx="5.5" ry="6" stroke-width="2" class="icon-secondary"/>
+                        <path d="M21.053 19.1184L24.3103 22.0291" stroke-width="2" class="icon-primary"/>
+                        <path d="M6.91277 20.4629L4.3103 24.0291" stroke-width="2" class="icon-primary"/>
+                        <path d="M23.3103 3.02908L20.5339 6.11561" stroke-width="2" class="icon-primary"/>
+                        <path d="M14.3583 22.7077L14.8103 27.0291" stroke-width="2" class="icon-primary"/>
+                        <path d="M13.7761 1.52588e-05L13.7761 4.02908" stroke-width="2" class="icon-primary"/>
+                        <path d="M-1.27772e-05 13.0036L4.3103 13.0036" stroke-width="2" class="icon-primary"/>
+                        <path d="M23.2897 13.0036L27.3102 13.0036" stroke-width="2" class="icon-primary"/>
+                        <path d="M4.16748 2.81546L6.8103 6.02908" stroke-width="2" class="icon-primary"/>
+                        <line x1="8.44777" y1="12.4527" x2="17.4527" y2="11.5522" stroke-linecap="round" class="icon-primary"/>
+                        <path d="M12.4999 12.5L9 12.5C9.5 14 10 14.5888 10.9999 14.5C11.8404 14.4254 12.4999 13.5 12.4999 12.5Z" class="icon-primary"/>
+                        <path d="M17.4999 12.3082L14 12.3082C14.5 13.8082 15 14.3969 15.9999 14.3082C16.8404 14.2336 17.4999 13.3082 17.4999 12.3082Z" class="icon-primary"/>
+                        <path d="M12 16C12 16 12.6529 16.5 13.5 16.5C14.3471 16.5 15 16 15 16" stroke-linecap="round" class="icon-primary"/>
+                    </svg>
+                    <svg id="moon" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8837 4.51223C30.1802 8.39789 31.6209 16.0437 25.3034 19.7955C20.4901 22.6541 14.4768 22.3764 13.4236 17.2432C16.2426 17.4744 18.4145 16.9431 19.6162 15.2679C20.8179 13.5927 21.5865 10.9553 20.46 9.30644C19.3335 7.65756 15.7579 6.08291 12.394 7.56953C12.1419 2.59358 22.3895 -0.785003 26.8837 4.51223Z" stroke-width="2" class="icon-primary"/>
+                        <path d="M6.29407 8L7.41664 11.4549H11.0493L8.11042 13.5902L9.23299 17.0451L6.29407 14.9098L3.35514 17.0451L4.47771 13.5902L1.53878 11.4549H5.1715L6.29407 8Z" class="icon-primary"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- MAIN CONTENT -->
+        <main id="main-content">
+            <div style="height: 6rem;"></div>
+            <!-- HERO -->
+            <section id="hero-section">
+                <h1 class="header-1">hi, my name is amanda li</h1>
+                <div class="typewriter-container">
+                    <p class="typewriter-text code-bold">
+                        > hello, world
+                    </p>
+                </div>
+                <div style="height: 10rem;"></div>
+                <div class="large-arrow-divider">
+                    <a href="#about-section" aria-label="Navigate to About Me Section">
+                        <svg class="large-arrow" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="4.24264" y1="4" x2="29" y2="28.7574"  stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 29)" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="4.24264" y1="25" x2="29" y2="49.7574" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 50)" stroke-width="6" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <div style="height: 50rem;"></div>
+
+            <!-- ABOUT -->
+            <section id="about-section">
+                <div style="height: 15rem;"></div>
+                <h2 class="header-2">about me</h2>
+                <p  class="body-small">
+                    Welcome to my portfolio website!<br><br>
+                    I am a second year student at the University of Toronto, pursuing a computer science specialist
+                    and statistics major.<br><br>
+                    I am passionate about learning new skills to bring innovative ideas to life, combining logic and
+                    creativity to build software that is interesting, useful, and fun.<br><br>
+                    Continue scrolling down to learn more about my skills, projects, and contact information.
+                </p>
+                <div class="small-arrow-divider">
+                    <a href="#skills-section" aria-label="Navigate to Skills Section">
+                        <svg class="small-arrow" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="4.24264" y1="4" x2="29" y2="28.7574"  stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 29)" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="4.24264" y1="25" x2="29" y2="49.7574" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 50)" stroke-width="6" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <div style="height: 50rem;"></div>
+
+            <!-- SKILLS -->
+            <section id="skills-section">
+                <div style="height: 15rem;"></div>
+                <h2 class="header-2">my skills</h2>
+                <div class="row-flex-inline">
+                    <p class="body-small-bold">
+                        Languages, Tools, & Frameworks:
+                    </p>
+                    <p  class="body-small">
+                        Python, Java, HTML/CSS/JS, Assembly, R, Git, Github, Figma
+                    </p>
+                </div>
+                <div class="row-flex-inline">
+                    <p class="body-small-bold">
+                        Other:
+                    </p>
+                    <p  class="body-small">
+                        Problem-solving, critical thinking, teamwork/collaboration, communication, organization,
+                        leadership, creativity, adaptability and continuous learning
+                    </p>
+                </div>
+                <div class="row-flex">
+                    <p class="body">to learn more about me, </p>
+                    <a href="pdfs/resume.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf" aria-label="Link to My Resume">
+                        <p class="link-text">view my resume here</p>
+                    </a>
+                </div>
+                <div class="small-arrow-divider">
+                    <a href="#projects-section" aria-label="Navigate to Projects Section">
+                        <svg class="small-arrow" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="4.24264" y1="4" x2="29" y2="28.7574"  stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 29)" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="4.24264" y1="25" x2="29" y2="49.7574" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 50)" stroke-width="6" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <div style="height: 50rem;"></div>
+
+            <!-- PROJECTS -->
+            <section id="projects-section">
+                <div style="height: 4rem;"></div>
+                <h2 class="header-2">projects</h2>
+                <p class="body">here are some recent projects I have worked on<br></p>
+                <div id="projects-container">
+                    <!-- add projects here -->
+                    <a href="https://github.com/amansdali/amansdali.github.io" id="project1" class="project" target="_blank" rel="noopener noreferrer">
+                        <img src="images/websiteimg.png"  alt="screenshot of website icon" width=100% height=auto>
+                        <p class="body-smaller-bold">Personal Website (WIP)</p>
+                        <p class="body-smaller">A personal website built using html, css, and javascript.</p>
+                    </a>
+                    <a href="https://github.com/amansdali/Munchables" id="project2" class="project" target="_blank" rel="noopener noreferrer">
+                        <img src="images/muchablesimg.png"  alt="screenshot of app" width=100% height=auto>
+                        <p class="body-smaller-bold">Munchables</p>
+                        <p class="body-smaller">Social media app for foodies. Sign up, post recipes, join clubs,
+                            follow users, and scroll through a curated feed. Made with Java Swing in a team of 4 for
+                            a software development course.</p>
+                    </a>
+                    <a href="https://github.com/amansdali/Steam-Game-Recommendation-Tool" id="project3" class="project" target="_blank" rel="noopener noreferrer">
+                        <img src="images/steamimg.png" alt="screenshot of website starting page" width=100% height=auto>
+                        <p class="body-smaller-bold">Steam Game Recommendation Tool</p>
+                        <p class="body-smaller">Website that recommends games on Steam based on an algorithm using
+                            weighted graphs and trees. Frontend made using HTML/CSS and Streamlit, backend made using Python, in a team 
+                            of 4 for a computer science course.
+                        </p>
+                    </a>
+                    <a href="https://github.com/amansdali/Exploding-Kittens-Local-Online-Game" id="project4" class="project" target="_blank" rel="noopener noreferrer">
+                        <img src="images/kittensimg.png"  alt="screenshot of game" width=100% height=auto>
+                        <p class="body-smaller-bold">Exploding Kittens Local Online Game</p>
+                        <p class="body-smaller">Multiplayer card game based on Exploding Kittens, made using Java.
+                            Features networking between four different devices and turn-based action between players.
+                            Made in a group of 2 for a high school computer science course.
+                        </p>
+                    </a>
+                    <a href="https://github.com/amansdali/The-Haunted-Forest" id="project5" class="project" target="_blank" rel="noopener noreferrer">
+                        <img src="images/forestimg.png"  alt="screenshot of game" width=100% height=auto>
+                        <p class="body-smaller-bold">The Haunted Forest</p>
+                        <p class="body-smaller">Platformer game made using Python for a high school project.</p>
+                    </a>
+                    <a href="https://github.com/qutch/StoryOfMyLife" id="project6" class="project" target="_blank" rel="noopener noreferrer">
+                        <img src="images/hackathonimg.png"  alt="game thumbnail" width=100% height=auto>
+                        <p class="body-smaller-bold">Story Of My Life</p>
+                        <p class="body-smaller"> A 2D top-down immersive language-learning game created using Unity, made
+                            within 36 hours in a team of 4 for UofTHacks13. Features Gemini, OpenRouter, and Elevenlabs api 
+                            integration enabling smart translations and interactive conversations with npcs through tts and stt functionality.
+                        </p>
+                    </a>
+                </div>
+                <div class="row-flex">
+                    <p class="body">see more at:</p>
+                    <a href="https://github.com/amansdali" target="_blank" rel="noopener noreferrer">
+                        <p class="link-text">github.com/amansdali</p>
+                    </a>
+                </div>
+                <p class="body">and here is some vector art I have done</p>
+                <p class="body"> (scroll -->) </p>
+                <div id="artwork-container">
+                    <img src="svgs/portrait.svg" alt="vector art of a woman" width=100% height=auto class="art">
+                    <img src="images/still_life.png" alt="vector art of a still life scene, as a png" width=100% height=auto class="art">
+                    <img src="svgs/leaf.svg" alt="vector art of leaf" width=100% height=auto class="art">
+                    <img src="svgs/card1.svg" alt="vector art of playing card" width=100% height=auto class="art">
+                    <img src="svgs/card2.svg" alt="vector art of playing card" width=100% height=auto class="art">
+
+                </div>
+
+                <div class="small-arrow-divider">
+                    <a href="#contact-section" aria-label="Navigate to contact section">
+                        <svg class="small-arrow" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="4.24264" y1="4" x2="29" y2="28.7574"  stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 29)" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="4.24264" y1="25" x2="29" y2="49.7574" stroke-width="6" stroke-linecap="round"/>
+                            <line x1="3" y1="-3" x2="38.0122" y2="-3" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 25 50)" stroke-width="6" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <div style="height: 50rem;"></div>
+
+            <!-- CONTACT -->
+            <section id="contact-section">
+                <div style="height: 15rem;"></div>
+                <h2 class="header-2">contact me</h2>
+                <p class="body">feel free to reach out to me at</p>
+                <div class="row-flex">
+                    <p class="body">email:</p>
+                    <a href="mailto:amandaj.li@mail.utoronto.ca">
+                        <p class="link-text">amandaj.li@mail.utoronto.ca</p>
+                    </a>
+                </div>
+                <div class="row-flex">
+                    <p class="body">linkedin:</p>
+                    <a href="https://www.linkedin.com/in/amanda-jianing-li/" target="_blank" rel="noopener noreferrer">
+                        <p class="link-text">linkedin.com/in/amanda-jianing-li</p>
+                    </a>
+                </div>
+                <div class="row-flex">
+                    <p class="body">phone:</p>
+                    <a href="tel:4165587720">
+                        <p class="link-text">416-558-7720</p>
+                    </a>
+                </div>
+            </section>
+            <div style="height: 2rem;"></div>
+        </main>
+    </div>
+    <script src="theme.js"></script>
+    </body>
+</html>

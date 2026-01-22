@@ -1,0 +1,397 @@
+/* LIGHT MODE (DEFAULT) */
+:root {
+    --background-colour: #eeeeee;
+    --text-colour: #444444;
+    --accent-colour: #e5b3b5;
+    --accent-colour-2: #c59698;
+    --transparent-colour: #eeeeee60;
+    --transparent-accent-colour: #e5b3b580;
+}
+[data-theme="light"] #sun {
+    display: block;
+}
+
+[data-theme="light"] #moon {
+    display: none;
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+    --background-colour: #444444;
+    --text-colour: #eeeeee;
+    --accent-colour: #FFC6C6;
+    --accent-colour-2: #ffeeee;
+    --transparent-colour: #44444460;
+    --transparent-accent-colour: #FFC6C680;
+}
+[data-theme="dark"] #sun {
+    display: none;
+}
+[data-theme="dark"] #moon {
+    display: block;
+}
+
+/* RESET STUFF */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* SET SCROLL BEHAVIOUR AND FONT_SIZE FOR REM */
+html {
+    scroll-behavior: smooth;
+}
+
+/* BACKGROUND COLOUR */
+body {
+    background-color: var(--background-colour);
+}
+
+/* MAKE A MORE NARROW CONTAINER FOR THE CONTENT */
+.container {
+    width: 832px;
+    margin-inline: auto;
+    padding: 16px 16px;
+}
+
+/* TEXT STYLES */
+.header-1 {
+    font-family: 'Gamja Flower', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 192px;
+    color: var(--accent-colour);
+    text-align: center;
+}
+.header-2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    color: var(--accent-colour);
+}
+.header-3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    color: var(--accent-colour);
+}
+.header-4 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    color: var(--text-colour);
+}
+.code {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--text-colour);
+}
+.code-bold {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--accent-colour);
+}
+.link-text {
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: var(--accent-colour);
+    text-decoration: none;
+}
+.body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--text-colour);
+}
+.body-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--text-colour);
+}
+.body-small {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--text-colour);
+}
+.body-small-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--text-colour);
+}
+.body-smaller {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--background-colour);
+}
+.body-smaller-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--background-colour);
+}
+
+/* OTHER USEFUL COMPONENTS */
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row-flex-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* NAVIGATION BAR (AT THE TOP) */
+#navigation-divider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--transparent-colour);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+.navbar {
+    width: 832px;
+    margin-inline: auto;
+    padding: 16px 16px;
+}
+/* LEFT SIDE OF NAV BAR */
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.homepage-link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.quack {
+    width: 32px;
+    height: auto;
+}
+.quack .icon-primary {
+    fill: var(--background-colour);
+}
+.quack .icon-secondary {
+    fill: var(--text-colour); }
+.header-link {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    color: var(--text-colour);
+}
+.homepage-link:hover .quack .icon-secondary{
+    fill: var(--accent-colour);
+}
+.homepage-link:hover .header-link {
+    color: var(--accent-colour);
+}
+.navbar-username::after {
+    content: "";
+}
+.navbar-username:hover::after {
+    content: ".github.io";
+    color: var(--accent-colour);
+}
+/* RIGHT SIDE OF NAV BAR */
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.nav-right a{
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background-color 0.6s ease;
+}
+.nav-right a:hover {
+    background-color: var(--transparent-accent-colour);
+}
+#sun, #moon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+#sun .icon-secondary {
+    stroke: var(--text-colour);
+    transition: stroke 0.6s ease;
+}
+#sun .icon-primary {
+    fill: var(--text-colour);
+    stroke: var(--text-colour);
+    transition: fill 0.6s ease, stroke 0.6s ease;
+}
+#sun:hover .icon-secondary {
+    stroke: var(--accent-colour);
+}
+#sun:hover .icon-primary {
+    stroke: var(--accent-colour);
+    fill: var(--accent-colour);
+}
+#moon .icon-primary {
+    stroke: var(--text-colour);
+    transition: stroke 0.6s ease;
+}
+#moon:hover .icon-primary {
+    stroke: var(--accent-colour);
+}
+
+/* HERO SECTION */
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.arrow {
+    width: 64px;
+    height: 64px;
+}
+.arrow line{
+    stroke:  var(--text-colour);
+}
+.arrow:hover line{
+    stroke:  var(--accent-colour);
+}
+
+/* ABOUT SECTION */
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* SKILLS SECTION */
+#skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* PROJECTS SECTION */
+#projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+#projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.project {
+    padding: 16px;
+    width: 256px;
+    border-radius: 16px;
+    background-color: var(--accent-colour);
+    border: 6px solid transparent;
+    z-index: 998;
+    transition: rotate 0.6s ease;
+}
+.project:hover {
+    border-color:  var(--text-colour);
+    z-index: 999;
+}
+#project1 {
+    rotate: 0deg;
+}
+#project1:hover {
+    rotate: -15deg;
+}
+#project2 {
+    rotate: 0deg;
+}
+#project2:hover {
+    rotate: 20deg;
+}
+#project3 {
+    rotate: 0deg;
+}
+#project3:hover {
+    rotate: -20deg;
+}
+#project4 {
+    rotate: 0deg;
+}
+#project4:hover {
+    rotate: -15deg;
+}
+#project5 {
+    rotate: 0deg;
+}
+#project5:hover {
+    rotate: 20deg;
+}
+#project6 {
+    rotate: 0deg;
+}
+#project6:hover {
+    rotate: -15deg;
+}
+
+/* CONTACT SECTION */
+#contact-section {
+    gap: 16px;
+}
